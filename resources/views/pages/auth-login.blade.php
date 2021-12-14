@@ -22,7 +22,7 @@
             </div>
             <div class="card-body">
               <div class="brand-logo text-center">
-                  <img src="http://localhost:8000/images/logo/logo-light.png" class="logo" alt="">
+                  <img src="{{asset('images/logo/logo-light.png')}}" class="logo" alt="">
               </div>
               <form action="{{url('/dashboard/index')}}">
                   <div class="form-group mb-50">
