@@ -1,21 +1,21 @@
-@extends('layouts.contentLayoutMaster')
-{{-- title --}}
-@section('title','Profile Page')
-@section('vendor-styles')
+
+
+<?php $__env->startSection('title','Profile Page'); ?>
+<?php $__env->startSection('vendor-styles'); ?>
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href="{{asset('vendors/css/tables/datatable/dataTables.bootstrap4.min.css')}}">
-<link rel="stylesheet" href="{{asset('vendors/css/tables/datatable/responsive.bootstrap4.min.css')}}">
-<link rel="stylesheet" href="{{asset('vendors/css/tables/datatable/buttons.bootstrap4.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('vendors/css/pickers/pickadate/pickadate.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('vendors/css/pickers/daterange/daterangepicker.css')}}">
-<!--<link rel="stylesheet" type="text/css" href="{{asset('vendors/css/ui/prism.min.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('vendors/css/file-uploaders/dropzone.min.css')}}">-->
+<link rel="stylesheet" href="<?php echo e(asset('vendors/css/tables/datatable/dataTables.bootstrap4.min.css')); ?>">
+<link rel="stylesheet" href="<?php echo e(asset('vendors/css/tables/datatable/responsive.bootstrap4.min.css')); ?>">
+<link rel="stylesheet" href="<?php echo e(asset('vendors/css/tables/datatable/buttons.bootstrap4.min.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('vendors/css/pickers/pickadate/pickadate.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('vendors/css/pickers/daterange/daterangepicker.css')); ?>">
+<!--<link rel="stylesheet" type="text/css" href="<?php echo e(asset('vendors/css/ui/prism.min.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('vendors/css/file-uploaders/dropzone.min.css')); ?>">-->
 <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/components/navs-tabs/"> -->
-@endsection
-@section('page-styles')
-<link rel="stylesheet" type="text/css" href="{{asset('css/components.css')}}">
-@endsection
-@section('content')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('page-styles'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('css/components.css')); ?>">
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
 
 <!-- Zero configuration table -->
 <section id="basic-datatable">
@@ -244,7 +244,7 @@
                             <h6 class="timeline-title">Mathew Slick attached file</h6>
                             <p class="timeline-text">on Project name</p>
                             <div class="timeline-content" style="font-size: 14px;">
-                              <img src="{{ asset('images/icon/sketch.png') }}" alt="document" height="30" width="30" class="mr-50">Data Folder.sketch
+                              <img src="<?php echo e(asset('images/icon/sketch.png')); ?>" alt="document" height="30" width="30" class="mr-50">Data Folder.sketch
                             </div>
                           </li>
                           <li class="timeline-item timeline-icon-danger active pb-0">
@@ -252,7 +252,7 @@
                             <h6 class="timeline-title">Mathew Slick docs</h6>
                             <p class="timeline-text">on Project name</p>
                             <div class="timeline-content" style="font-size: 14px;">
-                              <img src="{{ asset('images/icon/pdf.png') }}" alt="document" height="30" width="30" class="mr-50">Updated Docs.pdf
+                              <img src="<?php echo e(asset('images/icon/pdf.png')); ?>" alt="document" height="30" width="30" class="mr-50">Updated Docs.pdf
                             </div>
                           </li>
                         </ul>
@@ -393,21 +393,21 @@
     <span class="float-left d-inline-block">Clifo Channel – All Rights Reserved</span>
   </p>
 </footer>
-@endsection
-@section('vendor-scripts')
-<script src="{{asset('vendors/js/pickers/pickadate/picker.js')}}"></script>
-<script src="{{asset('vendors/js/pickers/pickadate/picker.date.js')}}"></script>
-<script src="{{asset('vendors/js/pickers/pickadate/picker.time.js')}}"></script>
-<script src="{{asset('vendors/js/pickers/pickadate/legacy.js')}}"></script>
-<script src="{{asset('vendors/js/extensions/moment.min.js')}}"></script>
-<script src="{{asset('vendors/js/pickers/daterange/daterangepicker.js')}}"></script>
-<!--<script src="{{asset('vendors/js/file-uploaders/dropzone.min.js')}}"></script>
-<script src="{{asset('vendors/js/ui/prism.min.js')}}"></script>-->
-@endsection
-@section('page-scripts')
-<script src="{{asset('js/scripts/pickers/dateTime/pick-a-datetime.js')}}"></script> 
-<!-- <script src="{{asset('js/scripts/pages/bootstrap-toast.js')}}"></script> -->
-<!--<script src="{{asset('js/scripts/extensions/dropzone.js')}}"></script>-->
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('vendor-scripts'); ?>
+<script src="<?php echo e(asset('vendors/js/pickers/pickadate/picker.js')); ?>"></script>
+<script src="<?php echo e(asset('vendors/js/pickers/pickadate/picker.date.js')); ?>"></script>
+<script src="<?php echo e(asset('vendors/js/pickers/pickadate/picker.time.js')); ?>"></script>
+<script src="<?php echo e(asset('vendors/js/pickers/pickadate/legacy.js')); ?>"></script>
+<script src="<?php echo e(asset('vendors/js/extensions/moment.min.js')); ?>"></script>
+<script src="<?php echo e(asset('vendors/js/pickers/daterange/daterangepicker.js')); ?>"></script>
+<!--<script src="<?php echo e(asset('vendors/js/file-uploaders/dropzone.min.js')); ?>"></script>
+<script src="<?php echo e(asset('vendors/js/ui/prism.min.js')); ?>"></script>-->
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('page-scripts'); ?>
+<script src="<?php echo e(asset('js/scripts/pickers/dateTime/pick-a-datetime.js')); ?>"></script> 
+<!-- <script src="<?php echo e(asset('js/scripts/pages/bootstrap-toast.js')); ?>"></script> -->
+<!--<script src="<?php echo e(asset('js/scripts/extensions/dropzone.js')); ?>"></script>-->
 <!-- <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script> -->
 
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
@@ -421,7 +421,9 @@ $('.toast-basic-toggler').on('click', function () {
   $('.toast-basic').toast('show');
 });
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
 
 
 
+
+<?php echo $__env->make('layouts.contentLayoutMaster', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\laravel_frest_bootstrap\resources\views/pages/tab_profile.blade.php ENDPATH**/ ?>
