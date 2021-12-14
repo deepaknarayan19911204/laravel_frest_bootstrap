@@ -1,0 +1,41 @@
+{
+  "menu": [
+    {
+      "url": "#",
+      "name": "Dashboard",
+      "slug": "dashboard",
+      "id":"#ico",
+      "icon": "desktop",
+      "dropdown": "1",
+      "submenu": [
+        {
+          "url": "dashboard/index",
+          "name": "Dashboard",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-analytics"
+        }
+      ]
+    },
+    {
+      "url": "#",
+      "name": "Business",
+      "slug": "apps",
+      "icon": "comments",
+      "dropdown": "1",
+      "submenu": [
+        {
+          "url": "dashboard/listpage",
+          "name": "List Page",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "app-email"
+        },
+        {
+          "url": "dashboard/profilepage",
+          "name": "Profile Page",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "app-email"
+        }
+      ]
+    }
+  ]
+}

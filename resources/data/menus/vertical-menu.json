@@ -1,0 +1,29 @@
+{
+  "menu": [
+    {
+      "url": "#",
+      "name": "Dashboard",
+      "slug": "dashboard",
+      "icon": "desktop",
+      "tag": "2",
+      "tagcustom": "badge badge-light-danger badge-pill badge-round float-right mr-50",
+      "submenu": [
+        {
+          "url": "dashboard/index",
+          "name": "Dashboard",
+          "slug": "dashboard-analytics",
+          "icon": "bx bx-right-arrow-alt"
+        }
+      ]
+    },
+    {
+      "navheader": "Other menus"
+    },
+    {
+      "url": "dashboard/listpage",
+      "name": "List Page",
+      "slug": "app-email",
+      "icon": "envelope-pull"
+    }
+  ]
+}
